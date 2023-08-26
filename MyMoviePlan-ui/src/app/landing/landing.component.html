@@ -1,0 +1,9 @@
+<app-navbar></app-navbar>
+  <div class="head"><h3 class="text-center">Welcome to <span class="title">NMS Cinemas</span></h3></div>
+<div class="movielist" [ngStyle]="{ 'width': (cart.items.length==0)? '100%' : '70%' }">
+  <app-movielist></app-movielist>
+</div>
+<div class="cart" *ngIf="cart.items.length>0" >
+<app-cart></app-cart>
+</div>
+<div class="clearfix"></div>
